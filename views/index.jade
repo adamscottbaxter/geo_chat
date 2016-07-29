@@ -4,5 +4,18 @@ block content
   h1= title
   p Hello World! Hi Robert Welcome to #{title}
   p Put Sign In here
-  a(href="http://localhost:3000") Chatroom Link
+  a(href="http://192.168.1.47:3000") Chatroom Link
+  div
+    h2 This project was written using Node, Express, Jade, and Meteor.
+    li Node is a development platform which makes use of JavaScript. Sample controller route:
+      p.
+      p router.get('/', function(req, res, next) {
+      p res.render('index', { title: 'GeoChat' });
+      p });
+    li Express is a web app framework
+    li Jade is a templating engine which works similarly to HTML but also allows for JS functions to be called inside. It also uses methods similar to the squiddies <% %>
+    li Meteor is the real time framework used for the chat app.
+
+      
+
   
