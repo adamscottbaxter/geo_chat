@@ -12,14 +12,8 @@ router.get('/', function(req, res, next) {
 // });
 
 // initial thought on chatroom route
-router.get('/chatroom', function(req, res) {
-    // var db = req.db;
-    // var collection = db.get('usercollection');
-    collection.find({},{},function(e,docs){
-        res.render('chatroom', {
-            // "userlist" : docs
-        });
-    });
+router.get('/chatroom', function(req, res, next) {
+  res.render('chatroom', { title: 'GeoChat' });
 });
 
 module.exports = router;
